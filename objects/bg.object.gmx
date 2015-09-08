@@ -53,27 +53,41 @@ image_index=0;
 global.start=collision_rectangle(210,130,413,180,mouse_hover,false,true);
 global.opt=collision_rectangle(171,191,458,255,mouse_hover,false,true);
 global.ext=collision_rectangle(229,262,395,316,mouse_hover,false,true);
+
+
 if(global.start!=noone)
 {
-if(mouse_check_button_pressed(mb_left))
-{
-instance_destroy();
-instance_create(0,0,play_bg);
-}
+    if(mouse_check_button_pressed(mb_left))
+    {
+    instance_destroy();
+    instance_create(0,0,play_bg);
+    }
 image_index=3;
 }
+
+
 if(global.opt!=noone)
 {
 image_index=2;
 }
+
+
 if(global.ext!=noone)
 {
 image_index=1;
+    if(mouse_check_button_pressed(mb_left))
+    {
+    game_end();
+    }
 }
+
+
 if(global.ext==noone &amp;&amp; global.opt==noone &amp;&amp; global.start==noone)
 {
 image_index=0;
 }
+
+
 //*
 </string>
           </argument>
