@@ -1,0 +1,13 @@
+vars=argument0;//the entity to add edit[] vector
+ind=argument1;//the edit[index] value
+nam=argument2;//add edit_names[ind] vector value (string)
+thex=argument3;//x for bar to spawn
+they=argument4;//y for bar to spawn
+range=argument5;//the ed_max value, the range of the bar
+vars.edit[ind]=1;//init w 1
+vars.edit_names[ind]=nam;//this contains resp. name w index by array
+bar=instance_create(thex,they,the_bar);
+bar.controls_ent=vars;//resp. bar controls,the entity
+bar.controls_ent_var=ind;//resp. bar controls,the entity's var. w vector's index
+bar.controls_ent_var_name=vars.edit_names[bar.controls_ent_var];
+bar.ed_max=range;

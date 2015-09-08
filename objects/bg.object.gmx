@@ -66,13 +66,13 @@ image_index=3;
 }
 
 
-if(global.opt!=noone)
+else if(global.opt!=noone)
 {
 image_index=2;
 }
 
 
-if(global.ext!=noone)
+else if(global.ext!=noone)
 {
 image_index=1;
     if(mouse_check_button_pressed(mb_left))
@@ -82,7 +82,7 @@ image_index=1;
 }
 
 
-if(global.ext==noone &amp;&amp; global.opt==noone &amp;&amp; global.start==noone)
+else//(global.ext==noone &amp;&amp; global.opt==noone &amp;&amp; global.start==noone)
 {
 image_index=0;
 }

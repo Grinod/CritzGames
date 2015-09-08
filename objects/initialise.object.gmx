@@ -28,6 +28,7 @@
             <string>//spawn objects
 script_execute(stepa_init);
 cursor_sprite=cursor;
+instance_create(0,0,NULL_OBJ);
 instance_create(110,110,prop1_shadow);
 instance_create(110,110,prop1);
 instance_create(0,0,mouse_hover);

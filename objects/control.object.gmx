@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(mouse_check_button_pressed(mb_left))script_execute(fire_bullet);
+            <string>if(mouse_check_button_pressed(mb_left))if(prop1.scroll_bar==0)script_execute(fire_bullet);
+//fire bullets only if there's no the_bar
 </string>
           </argument>
         </arguments>
